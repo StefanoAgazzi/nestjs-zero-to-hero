@@ -6,158 +6,170 @@
 	},
 	"item": [
 		{
-			"name": "Get All Tasks",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.1:3000/tasks",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"tasks"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Task",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "title",
-							"value": "",
-							"type": "text"
-						},
-						{
-							"key": "description",
-							"value": "",
-							"type": "text"
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Get All Tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/tasks?status=DONE",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "DONE"
+								}
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "127.0.0.1:3000/tasks",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"tasks"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Task by Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.1:3000/tasks/4daa4f50-dc8c-11e9-b034-752f0d7a05cf",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"4daa4f50-dc8c-11e9-b034-752f0d7a05cf"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete Task",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "127.0.0.1:3000/tasks/4daa4f50-dc8c-11e9-b034-752f0d7a05cf",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"4daa4f50-dc8c-11e9-b034-752f0d7a05cf"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Task Status",
-			"request": {
-				"method": "PATCH",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "status",
-							"value": "IN_PROGRESS",
-							"type": "text"
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "one",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "test",
+									"type": "text"
+								}
+							]
 						},
-						{
-							"key": "",
-							"value": "",
-							"type": "text",
-							"disabled": true
+						"url": {
+							"raw": "127.0.0.1:3000/tasks",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "127.0.0.1:3000/tasks/16360810-dc8d-11e9-826d-e7f97e4b1de9/status",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "3000",
-					"path": [
-						"tasks",
-						"16360810-dc8d-11e9-826d-e7f97e4b1de9",
-						"status"
-					]
+				{
+					"name": "Get Task by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/tasks/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3000/tasks/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task Status",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "DONE",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/tasks/2/status",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}

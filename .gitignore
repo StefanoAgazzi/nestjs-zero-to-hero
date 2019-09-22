@@ -92,7 +92,7 @@ fabric.properties
 # KDE directory preferences
 .directory
 
-# Linux trash folder which might appear on any partition or disk
+# Linux trash config which might appear on any partition or disk
 .Trash-*
 
 # .nfs files are created when an open file is removed but is still being accessed
@@ -255,7 +255,7 @@ AutoTest.Net/
 # Web workbench (sass)
 .sass-cache/
 
-# Installshield output folder
+# Installshield output config
 [Ee]xpress/
 
 # DocProject is a documentation generator add-in
@@ -288,7 +288,7 @@ PublishScripts/
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
-# The packages folder can be ignored because of Package Restore
+# The packages config can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
@@ -435,7 +435,7 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
-# MFractors (Xamarin productivity tool) working folder
+# MFractors (Xamarin productivity tool) working config
 .mfractor/
 
 # Local History for Visual Studio
@@ -444,10 +444,10 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
-# Backup folder for Package Reference Convert tool in Visual Studio 2017
+# Backup config for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# Ionide (cross platform F# VS Code tools) working folder
+# Ionide (cross platform F# VS Code tools) working config
 .ionide/
 
 ### VisualStudioCode template
