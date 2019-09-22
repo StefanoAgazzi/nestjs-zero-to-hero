@@ -489,6 +489,11 @@
   dependencies:
     "@types/superagent" "*"
 
+"@types/validator@10.11.2":
+  version "10.11.2"
+  resolved "https://registry.yarnpkg.com/@types/validator/-/validator-10.11.2.tgz#48b60ca2cca927081f37a1ad1de3e25d04abc9f0"
+  integrity sha512-k/ju1RsdP5ACFUWebqsyEy0avP5uNJCs2p3pmTHzOZdd4gMSAJTq7iUEHFY3tt3emBrPTm6oGvfZ4SzcqOgLPQ==
+
 "@types/yargs-parser@*":
   version "13.1.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-13.1.0.tgz#c563aa192f39350a1d18da36c5a8da382bbd8228"
@@ -915,6 +920,11 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
+class-transformer@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.2.3.tgz#598c92ca71dcca73f91ccb875d74a3847ccfa32d"
+  integrity sha512-qsP+0xoavpOlJHuYsQJsN58HXSl8Jvveo+T37rEvCEeRfMWoytAyR0Ua/YsFgpM6AZYZ/og2PJwArwzJl1aXtQ==
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -924,6 +934,15 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+class-validator@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.10.0.tgz#5e5f8108fa200d5ce1906cd5537af102c072dbcd"
+  integrity sha512-RvjxRlvoCvM/ojUq11j78ISpReGdBoMErdmDk1e27aQZK6ppSXq751UE6jB9JI7ayEnL6Nnmllzn/HXVSu3dmg==
+  dependencies:
+    "@types/validator" "10.11.2"
+    google-libphonenumber "^3.1.6"
+    validator "11.1.0"
 
 cli-color@1.4.0:
   version "1.4.0"
@@ -1760,6 +1779,11 @@ globals@^11.1.0:
   version "11.12.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
+
+google-libphonenumber@^3.1.6:
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/google-libphonenumber/-/google-libphonenumber-3.2.5.tgz#2ebe6437fd3dbbffd65f4339ad1ba93b3dc56836"
+  integrity sha512-Y0r7MFCI11UDLn0KaMPBEInhROyIOkWkQIyvWMFVF2I+h+sHE3vbl5a7FVe39td6u/w+nlKDdUMP9dMOZyv+2Q==
 
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.2.2"
@@ -4398,6 +4422,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validator@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-11.1.0.tgz#ac18cac42e0aa5902b603d7a5d9b7827e2346ac4"
+  integrity sha512-qiQ5ktdO7CD6C/5/mYV4jku/7qnqzjrxb3C/Q5wR3vGGinHTgJZN/TdFT3ZX4vXhX2R1PXx42fB1cn5W+uJ4lg==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"
